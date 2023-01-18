@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Interactive rating component</title>
 
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <body>
+    <!-- Rating state start -->
+    <main class="main-card">
+      <div class="star-img">
+        <img src="images/icon-star.svg" alt="star image" />
+      </div>
+      <h1>How did we do?</h1>
 
-</head>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
 
-<body>
-  <!-- Rating state start -->
-  <main>
-    <div class="star-img">
-      <img src="images/icon-star.svg" alt="star image">
-    </div>
-    <h1>How did we do?</h1>
+      <div class="rating">
+        <button class="number" value="1" style="margin-left: 0;">1</button>
+        <button class="number" value="2">2</button>
+        <button class="number" value="3">3</button>
+        <button class="number" value="4">4</button>
+        <button class="number" value="5">5</button>
+      <!-- </div> -->
 
-    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-      offering!
+      <button class="submit" id="submit">SUBMIT</button>
+    </main>
+    <!-- Rating state end -->
+    <section class ="hidden">
+      <img class="illustration" src="images/illustration-thank-you.svg" alt="thank you">
+    <p class="select" id="select">You selected <span id="rating"></span> of 5
     </p>
+    <div class="thanks">
+      <h1>Thank you!</h1>
 
-    <button class="number" id="one" value="one">1</button>
-    <button class="number">2</button>
-    <button class="number">3</button>
-    <button class="number">4</button>
-    <button class="number">5</button>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+        touch!</p>
+    </div>
+    </section>
 
-    <a href="thankYou.html"><button onclick="submit" class="submit">SUBMIT</button></a>
-  </main>
-  <!-- Rating state end -->
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Olayanju Daniel</a>.
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://danielpeace7.github.io/Portfolio">Olayanju Daniel</a>.
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

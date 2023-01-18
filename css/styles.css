@@ -1,15 +1,26 @@
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
 body {
   background-color: hsl(216, 12%, 8%);
   font-family: 'Overpass', sans-serif;
   box-sizing: border-box;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 main {
   background-color: hsl(213, 19%, 18%);
   border-radius: 15px;
-  margin: 98px 0;
+  /* margin: 130px 0; */
   padding: 30px 0 30px 20px;
-  /* width: 335px; */
+  width: 335px;
 }
 
 .star-img {
@@ -82,6 +93,47 @@ button a {
   text-decoration: none;
 }
 
+section {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 15px;
+  margin: 130px 0;
+}
+
+.illustration {
+  margin: 0 98px;
+  padding: 40px 0 15px;
+}
+
+.select {
+  background-color: hsl(216, 12%, 8%);
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  margin: auto;
+  padding: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+.thanks h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.thanks p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  margin: 0;
+  text-align: center;
+}
+
+.thanks {
+  padding: 0 20px 30px;
+}
+
+.hidden {
+  display: none;
+}
+
 footer {
   bottom: 0;
   font-size: 11px;
@@ -103,10 +155,15 @@ footer a {
 @media only screen and (min-width: 600px) {
   main {
     width: 350px;
-    margin: 120px auto;
+    /* margin: 150px auto; */
   }
 
   .submit {
     width: 90%;
   }
+
+  section {
+      width: 380px;
+      /* margin: 160px auto; */
+    }
 }
